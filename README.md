@@ -1,6 +1,6 @@
 ### Restaurant Website
 User
-#Here the user can reserve or adit or delete the reservation s per his requirments
+#Here the user can reserve or edit or delete the reservation s per his requirements
 
 Admin
-#Can have add/delete/gran reservations for the users
+#Can have add/delete/grant reservations for the users.
