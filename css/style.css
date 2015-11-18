@@ -1,0 +1,23 @@
+.collapse{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.container {
+    width: 1800px;
+}
+
+.margin20 {
+    margin-right: 20px;
+}
+.marginup {
+    margin-top: 20px;
+}
+
+.height50 {
+    height: 50px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
