@@ -4,7 +4,7 @@
 }
 
 .container {
-    width: 1800px;
+    width: 1300px;
 }
 
 .margin20 {
@@ -13,6 +13,9 @@
 .marginup {
     margin-top: 20px;
 }
+.marginupp {
+    margin-top: 40px;
+}
 
 .height50 {
     height: 50px;
@@ -20,4 +23,9 @@
 
 .margin-bottom-20 {
     margin-bottom: 20px;
+}
+
+body {
+    background-color:lightgrey;
+
 }

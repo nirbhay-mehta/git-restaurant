@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>home_page</title>
+    <title>login_page</title>
     <style>
         .carousel-inner > .item > img,
         .carousel-inner > .item > a > img {
@@ -44,9 +44,15 @@
                     <li><a href="./alerts.html"><span class="glyphicon glyphicon-envelope"></span> <b>Alerts</b></a></li>
 
 
-                     <li class="dropdown" id="menuLogin">
-                            <a class="dropdown-toggle" href="./login.html" data-toggle="dropdown" id="navLogin"><span class="glyphicon glyphicon-log-in"></span><b> Login</b></a>
-
+                    <li class="dropdown" id="menuLogin">
+                        <a class="dropdown-toggle" href="./list_all_reservation.html" data-toggle="dropdown" id="navLogin"><span class="glyphicon glyphicon-log-in"></span><b> Login</b></a>
+                        <div class="dropdown-menu" style="padding:17px;">
+                            <form class="form" id="formLogin">
+                                <input name="username" id="username" type="text" placeholder="Username">
+                                <input name="password" id="password" type="password" placeholder="Password"><br>
+                                <button type="button" id="btnLogin" class="btn">Login</button>
+                            </form>
+                        </div>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -57,7 +63,7 @@
 
 
 <div class="content container">
-   <H1>Welcome to SHIV SAGAR!</H1>
+    <H1>Welcome to SHIV SAGAR!</H1>
     <br>
     <h2>Mission Statement</h2>
     <p>To sell delicious and remarkable food and drinks. That the food and drink we sell meets the highest standards of quality, freshness and seasonality and combines both modern-creative and traditional southern styles of cooking. To consistently provide our customers with impeccable service by demonstrating warmth, graciousness, efficiency, knowledge, professionalism and integrity in our work. To have every customer who comes through our doors leave impressed by Maxie's and excited to come back again. To create and maintain a restaurant that is comprehensive and exceptional in its attention to every detail of operation. To provide all who work with us a friendly, cooperative and rewarding environment which encourages long- term, satisfying, growth employment. To keep our concept fresh, exciting and on the cutting edge of the hospitality and entertainment industry. To be a giving member of the Ithaca community and to use our restaurant to improve the quality of life in the Finger Lakes region.</p>

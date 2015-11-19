@@ -36,7 +36,7 @@
                 <ul class="nav navbar-nav">
                     <li class="margin20 "><a href="./home_page.html"><span class="glyphicon glyphicon-home"> <b>Home</b></span></a></li>
                     <li class="margin20"><a href="./new_reservation.html"><span class="glyphicon glyphicon-ok"><b> Reservation</b> </span></a></li>
-                    <li class="margin20"><a href="./edit_cancel.html"><span class="glyphicon glyphicon-remove"><b> Edit/Cancel</b></span></a></li>
+                    <li class="margin20"><a href="./admin_edit_cancel.html"><span class="glyphicon glyphicon-remove"><b> Edit/Cancel</b></span></a></li>
                     <li class="margin20"><a href="./feedback.html"><span class="glyphicon glyphicon-pushpin"> <b>Feedback</b></span></a></li>
                     <li class="margin20"><a href="./contact_us.html"><span class="glyphicon glyphicon-phone-alt"> <b>ContactUS</b></span></a></li>
                 </ul>
@@ -51,11 +51,13 @@
     </nav>
 </div>
 
+
+
 <div class="content container">
     <ul class="nav nav-tabs">
         <li><a href="./list_all_reservation.html">List of Reservations</a></li>
-        <li><a href="./admin_edit_cancel.html">Edit/Cancel Reservation</a></li>
-        <li class="active"><a href="#">View Seating Arrangements</a></li>
+        <li class="active"><a href="./admin_edit_cancel.html">Edit/Cancel Reservation</a></li>
+        <li><a href="./view_seatting_area.html">View Seating Arrangements</a></li>
         <li><a href="./profile_settings.html">Profile and Settings</a></li>
     </ul>
     <br>
@@ -85,142 +87,75 @@
         </li>
     </ul>
 
-    <table class="table table-striped">
-        <thead>
-        <tr>
-            <th>Table No</th>
-            <th>Status</th>
-            <th>Size</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-            <th>Id</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>1</td>
-            <td>Occupied</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>11</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Vacant</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>22</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Occupied</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>34</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Occupied</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>444</td>
-        </tr>>
-        <tr>
-            <td>5</td>
-            <td>Occupied</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>555</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Occupied</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>666</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Occupied</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>777</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Occupied</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>77</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>Occupied</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>88</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>Vacant</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>999</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Occupied</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>888</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Vacant</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>234</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Vacant</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>I44</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Occupied</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>I23</td>
-        </tr>
-        <tr>
-        <tr>
-            <td>1</td>
-            <td>Vacant</td>
-            <td>3</td>
-            <td>7:30PM</td>
-            <td>9:00PM</td>
-            <td>324</td>
-        </tr>
+    <br><Br><br>
+    <form class="form-horizontal" role="form">
+        <div class="row text-center">
+            <button type="button" class="margin20 btn btn-default">Edit Reservation</button>
+            <button type="button" class="btn btn-default">Cancel Reservation</button>
+        </div>
 
-        </tbody>
-    </table>
+
+        <br>
+
+        <div class="form-group">
+            <label type="number" class="control-label col-sm-2" for="id">Confirmation ID:</label>
+
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="id" placeholder="Enter your confirmation ID">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Registered Email:</label>
+
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Password:</label>
+
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter your password">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="date">Booked Date:</label>
+
+            <div class="col-sm-10">
+                <input type="date" class="form-control" id="date" placeholder="MM/DD/YYYY">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="reserveTime">Booked Time:</label>
+
+            <div class="col-sm-10">
+                <input type="time" class="form-control" id="reserveTime" placeholder="HH::MM">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label><input type="checkbox"> Are you sure of the changes?</label>
+                </div>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-sm-9 text-center">
+                <button type="submit" class="margin20 btn btn-default">Submit Changes</button>
+                <button type="clear" class="btn btn-default">Cancel</button>
+
+            </div>
+        </div>
+
+
+    </form>
 </div>
+
 </body>
 </html>
